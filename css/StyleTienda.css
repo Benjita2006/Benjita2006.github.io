@@ -1,0 +1,286 @@
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+}
+* {
+  text-decoration: none;
+  color: inherit;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+nav{
+  background: #2fcdcd;
+  height: 5rem;
+  width: 100%;
+}
+.enlace{
+  position: absolute;
+  padding: 1.25rem 3.125rem;
+}
+.logo{
+  height: 2.5rem;
+}
+nav ul{
+  float: right;
+  margin-right: 1.25rem;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 5rem;
+  margin: 0 0.3125rem;
+}
+nav ul li a{
+  color: #fff;
+  font-size: 1.125rem;
+  padding: 0.4375rem 0.8125rem;
+  border-radius: 0.1875rem;
+  text-transform: uppercase;
+}
+a:hover{
+  background: #000090;
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 1.875rem;
+  color: #fff;
+  float: right;
+  line-height: 5rem;
+  margin-right: 2.5rem;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+
+header {
+  margin-right: 1em;
+  display: flex;
+  align-items: center;
+  margin-bottom: 12.5em;
+  border-radius: 0.9375em;
+  background-position: center;
+  background-size: 12.5em;
+}
+.titulo {
+  transition: 0.7s;
+  display: flex;
+  position: relative;
+  left: 0;
+  font-size: 2.25em;
+  color: #fff;
+}
+.titulo {
+  color: #ffffff;
+}
+.welcome {
+  color: #fff;
+  position: relative;
+  text-align: center;
+  font-size: 1.25em;
+}
+.welcome > h5 {
+  column-rule-color: red;
+  column-rule-width: 0.125em;
+  column-rule-style: dashed;
+  columns: 2;
+  text-align: justify;
+}
+.info h1 {
+  position: absolute;
+  top: 0;
+  bottom: 10em;
+}
+.info {
+  position: relative;
+  color: #000;
+  columns: 1;
+  flex-flow: row wrap;
+  column-gap: 3.125em;
+  justify-content: center;
+  text-align: center;
+  align-items: baseline;
+  background-color: rgb(255, 255, 255, 0.9);
+}
+.info {
+  left: 15%;
+  width: 70%;
+  top: 1.25em;
+  margin-top: 3.75em;
+  height: 15em;
+  padding: 0.625em;
+  border-radius: 1.25em;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+.info h5{
+  font-size: 0.70em;
+}
+.formulario {
+  transition: 1s;
+  display: flex;
+  top: 0px;
+  height: 6em;
+  position: relative;
+  align-items: center;
+  font-size: 1.50em;
+}
+.formulario:hover {
+  transition: 1s;
+  font-size: 1.25em;
+  color: #fff;
+  background-color: black;
+  box-shadow: inset 255px 255px 255px rgba(85, 84, 84, 0.5);
+}
+.formulario p{
+  margin-top: 3em;
+  transition: 0.5s;
+}
+.formulario:hover > p {
+  font-size: 0;
+}
+.fondoSobrenosotros {
+  position: absolute;
+  width: 90%;
+  height: 80%;
+  border-radius: 1.25em;
+  bottom: 6.25em;
+  opacity: 55%;
+  left: 5%;
+  z-index: 50;
+}
+.sobrenosotros {
+  font-size: 25em;
+  color: #ffffff;
+  position: relative;
+  text-align: center;
+  font-size: 1.25em;
+  padding: 6.25em;
+}
+.sobrenosotros h3 {
+  column-rule-color: red;
+  column-rule-width: 0.125em;
+  column-rule-style: dotted;
+  columns: 2;
+  text-align: justify;
+}
+footer {
+  transition: 1s;
+  display: flex;
+  position: relative;
+  align-items: center;
+  background-color: #fff;
+  position: relative;
+  width: 100%;
+  height: 1.80em;
+  margin: 0;
+  opacity: 50%;
+}
+footer:hover {
+  transition: 2s;
+  opacity: 100%;
+}
+footer:hover p {
+  transition: 2s;
+  color: blue;
+}
+footer h1 {
+  font-size: 2em;
+  color: #000000;
+}
+footer p{
+  font-size: 1em;
+}
+footer a {
+  position: relative;
+  left: 67em;
+  width: 3.125em;
+  height: 80%;
+  background-image: url("https://www.pngkey.com/png/detail/448-4486200_instagram-logo-circle.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.extra {
+  color: #000000;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  gap: 1.25em;
+  font-size: 1em;
+  text-align: center;
+  left: 1.25em;
+}
+@media screen and (max-width: 1085px){
+  .fondoSobrenosotros{
+    opacity: 0%;
+  }
+  .info{
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 1030px){
+  body{
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 750px){
+  body{
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 500px){
+  body{
+    font-size: 9px;
+  }
+}
+@media screen and (max-width: 382px){
+  body{
+    font-size: 6px;
+  }
+}
+@media (max-width: 952px){
+  .enlace{
+      padding-left: 20px;
+  }
+  nav ul li a{
+      font-size: 16px;
+  }
+}
+
+@media (max-width: 858px){
+  .checkbtn{
+      display: block;
+  }
+  ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #2c3e50;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+  }
+  nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+  }
+  nav ul li a{
+      font-size: 20px;
+  }
+  li a:hover, li a.active{
+      background: none;
+      color: red;
+  }
+  #check:checked ~ ul{
+      left:0;
+  }
+  #check:checked ~ div{
+    left: 100vh;
+    }
+  }
