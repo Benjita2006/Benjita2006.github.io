@@ -4,8 +4,80 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Página Web Sencilla</title>
-  <link rel="stylesheet" href="StyleTienda.css">
+  <link rel="stylesheet" href="stylaaae.css">
 </head>
+<style>
+  body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('a.jpg'); /* Cambia esta URL a tu imagen */
+  background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
+  background-position: center; /* Centra la imagen */
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Altura completa de la ventana */
+  position: relative;
+}
+
+/* Estilos para el menú desplegable */
+.sidebar {
+  height: 100%;
+  width: 250px;
+  position: fixed; /* Cambiado a fixed para que se superponga */
+  z-index: 10; /* Asegura que el menú esté por encima del contenido */
+  top: 0;
+  left: 0;
+  background-color: rgba(76, 175, 80, 0.9); /* Color verde con transparencia */
+  overflow-x: hidden;
+  padding-top: 60px;
+  display: none; /* Oculto por defecto */
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #333333;
+}
+
+.submenu {
+  display: none; /* Oculto por defecto */
+  padding-left: 20px; /* Indentación para el submenú */
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 2;
+}
+
+.openbtn:hover {
+  background-color: #333333;
+}
+
+/* Contenido principal */
+#main {
+  font-size: 30px;
+  text-align: center;
+  z-index: 2; /* Asegura que el contenido esté por encima del menú */
+}
+</style>
 <body>
   <div id="mySidebar" class="sidebar">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
